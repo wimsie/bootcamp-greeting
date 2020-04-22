@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: greeting
+  labels:
+    name: greeting
+spec:
+  containers:
+  - name: greeting
+    image: wimsie/bootcamp-greeting:latest
+    ports:
+    - containerPort: 8080
